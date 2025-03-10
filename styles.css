@@ -55,7 +55,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(44, 62, 80, 0.9)), url('./images/DALL·E 2025-03-10 18.52.47 - Ein modernes Büro mit einer einzelnen Person, die vor einem Computer sitzt. Auf dem Bildschirm ist deutlich das Wort \'AI\' in großen Buchstaben zu sehe.webp');
+    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(44, 62, 80, 0.9)), url('images/DALL%C2%B7E%202025-03-10%2018.52.47%20-%20Ein%20modernes%20B%C3%BCro%20mit%20einer%20einzelnen%20Person%2C%20die%20vor%20einem%20Computer%20sitzt.%20Auf%20dem%20Bildschirm%20ist%20deutlich%20das%20Wort%20\'AI\'%20in%20gro%C3%9Fen%20Buchstaben%20zu%20sehe.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,11 +64,30 @@ nav a:hover {
     padding: 8rem 2rem 4rem;
     margin-top: 60px;
     position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Kurse Section */
@@ -77,6 +96,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .courses::before {
@@ -85,10 +105,27 @@ nav a:hover {
     top: 0;
     left: 0;
     right: 0;
-    height: 300px;
-    background: url('./images/TEAM Schulung .webp') center/cover no-repeat;
+    height: 400px;
+    background: url('images/TEAM%20Schulung%20.webp') center/cover no-repeat;
     opacity: 0.1;
     z-index: -1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+.courses:hover::before {
+    transform: scale(1.15);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .course-grid {
