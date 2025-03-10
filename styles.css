@@ -55,23 +55,47 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(44, 62, 80, 0.9)), url('images/a-photo-of-a-group-of-people-attending-a_Tt58X1fcQcOhgpvKizG9Gg_zMXJ0FyOQWmI0_aG4WubQw.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    position: relative;
     color: white;
     text-align: center;
     padding: 8rem 2rem 4rem;
     margin-top: 60px;
-    position: relative;
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(44, 62, 80, 0.9));
+    z-index: 1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     padding: 3rem;
     background: rgba(0, 0, 0, 0.3);
@@ -101,24 +125,21 @@ nav a:hover {
     overflow: hidden;
 }
 
-.courses::before {
-    content: '';
+.courses-background {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     height: 100%;
-    background: url('images/Kurze Schulung .jpeg') center/cover no-repeat;
-    opacity: 0.05;
     z-index: -1;
-    transform: scale(1.1);
-    transition: transform 0.3s ease-out;
-    filter: grayscale(30%);
+    opacity: 0.05;
 }
 
-.courses:hover::before {
-    transform: scale(1.12);
-    opacity: 0.08;
+.courses-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%);
 }
 
 .section-header {
