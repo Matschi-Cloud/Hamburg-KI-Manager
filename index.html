@@ -3,10 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt 2025</title>
+    <title>KI-Manager Hamburg - Professionelle KI-Schulungen</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Inhalt deiner Seite... -->
+    <header>
+        <nav>
+            <div class="logo">KI-Manager Hamburg</div>
+            <ul>
+                <li><a href="#kurse">Kurse</a></li>
+                <li><a href="#ueber-uns">Über uns</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Werden Sie KI-Manager</h1>
+            <p>Professionelle Schulungen für die digitale Transformation</p>
+        </section>
+
+        <section id="kurse" class="courses">
+            <h2>Unsere Schulungsangebote</h2>
+            
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>Kompakt-Schulung</h3>
+                    <p class="duration">120 Minuten</p>
+                    <ul class="course-features">
+                        <li>KI-Grundlagen und Terminologie</li>
+                        <li>Überblick über aktuelle KI-Technologien</li>
+                        <li>Praktische Anwendungsfälle</li>
+                        <li>Chancen und Risiken von KI</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Intensiv-Tagesschulung</h3>
+                    <p class="duration">1 Tag</p>
+                    <ul class="course-features">
+                        <li>Vertieftes KI-Verständnis</li>
+                        <li>Strategische KI-Implementation</li>
+                        <li>Change Management</li>
+                        <li>Datenschutz und Ethik</li>
+                        <li>Hands-on Workshops</li>
+                        <li>Best Practices und Case Studies</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Private KI-Schulung</h3>
+                    <p class="duration">120 Minuten</p>
+                    <ul class="course-features">
+                        <li>Individuell angepasste Inhalte</li>
+                        <li>Persönliche KI-Strategien</li>
+                        <li>Praktische Tools für den Alltag</li>
+                        <li>1:1 Betreuung</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics">
+            <h2>Kernthemen unserer Schulungen</h2>
+            <div class="topics-grid">
+                <div class="topic">
+                    <h3>KI-Grundlagen</h3>
+                    <p>Machine Learning, Deep Learning, Natural Language Processing</p>
+                </div>
+                <div class="topic">
+                    <h3>Geschäftsprozesse</h3>
+                    <p>Prozessoptimierung, Automatisierung, Effizienzsteigerung</p>
+                </div>
+                <div class="topic">
+                    <h3>Strategische Planung</h3>
+                    <p>KI-Integration, Roadmap-Entwicklung, Change Management</p>
+                </div>
+                <div class="topic">
+                    <h3>Datenschutz & Ethik</h3>
+                    <p>DSGVO, ethische Richtlinien, Compliance</p>
+                </div>
+                <div class="topic">
+                    <h3>Praxisorientierung</h3>
+                    <p>Tools, Best Practices, Anwendungsfälle</p>
+                </div>
+                <div class="topic">
+                    <h3>Zukunftstrends</h3>
+                    <p>Innovationen, Marktentwicklungen, Technologie-Updates</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact">
+            <h2>Kontaktieren Sie uns</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="E-Mail" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Kurs auswählen</option>
+                        <option value="kompakt">Kompakt-Schulung</option>
+                        <option value="intensiv">Intensiv-Tagesschulung</option>
+                        <option value="privat">Private KI-Schulung</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ihre Nachricht" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Anfrage senden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>KI-Manager Hamburg</h4>
+                <p>Ihre Experten für KI-Schulungen und digitale Transformation</p>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>E-Mail: info@ki-manager-hamburg.de</p>
+                <p>Tel: +49 (0) 123 456789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 KI-Manager Hamburg. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
 </body>
 </html> 
