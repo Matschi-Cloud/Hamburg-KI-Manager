@@ -55,16 +55,17 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(44, 62, 80, 0.9)), url('images/DALL%C2%B7E%202025-03-10%2018.52.47%20-%20Ein%20modernes%20B%C3%BCro%20mit%20einer%20einzelnen%20Person%2C%20die%20vor%20einem%20Computer%20sitzt.%20Auf%20dem%20Bildschirm%20ist%20deutlich%20das%20Wort%20\'AI\'%20in%20gro%C3%9Fen%20Buchstaben%20zu%20sehe.webp');
+    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(44, 62, 80, 0.9)), url('images/a-photo-of-a-group-of-people-attending-a_Tt58X1fcQcOhgpvKizG9Gg_zMXJ0FyOQWmI0_aG4WubQw.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     padding: 8rem 2rem 4rem;
     margin-top: 60px;
     position: relative;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,10 +73,11 @@ nav a:hover {
 
 .hero-content {
     max-width: 800px;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
@@ -105,16 +107,18 @@ nav a:hover {
     top: 0;
     left: 0;
     right: 0;
-    height: 400px;
-    background: url('images/TEAM%20Schulung%20.webp') center/cover no-repeat;
-    opacity: 0.1;
+    height: 100%;
+    background: url('images/Kurze Schulung .jpeg') center/cover no-repeat;
+    opacity: 0.05;
     z-index: -1;
     transform: scale(1.1);
     transition: transform 0.3s ease-out;
+    filter: grayscale(30%);
 }
 
 .courses:hover::before {
-    transform: scale(1.15);
+    transform: scale(1.12);
+    opacity: 0.08;
 }
 
 .section-header {
