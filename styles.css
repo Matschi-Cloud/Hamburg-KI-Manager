@@ -1,0 +1,8 @@
+body {
+    /* Vorhandene Stile... */
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover; /* Passt das Bild an, um den gesamten Hintergrund zu bedecken */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    /* Weitere Stile... */
+} 
