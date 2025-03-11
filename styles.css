@@ -21,10 +21,10 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('images/Faber_Logo_4C.jpg') no-repeat center center fixed;
+    background: url('images/YE2spVa1SRw2rOe0-generated_image.jpg') no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.05;
-    filter: grayscale(30%) brightness(1.2);
+    opacity: 0.15;
+    filter: grayscale(20%) brightness(1.1) contrast(110%);
 }
 
 /* Header und Navigation */
@@ -143,10 +143,9 @@ nav a:hover::after {
     z-index: 2;
     max-width: 800px;
     padding: 4rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: fadeInUp 1s ease-out;
@@ -188,7 +187,9 @@ nav a:hover::after {
     margin: 0 auto;
     overflow: hidden;
     min-height: 800px;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .course-image {
@@ -307,9 +308,11 @@ nav a:hover::after {
 .topics {
     position: relative;
     padding: 6rem 2rem;
-    background: rgba(248, 249, 250, 0.98);
+    background: rgba(248, 249, 250, 0.95);
     overflow: hidden;
     min-height: 800px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .topic-image {
@@ -407,8 +410,10 @@ nav a:hover::after {
     position: relative;
     padding: 6rem 2rem;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.99);
+    background: rgba(255, 255, 255, 0.97);
     min-height: 800px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .contact-container {
@@ -420,8 +425,6 @@ nav a:hover::after {
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .contact-container::before {
